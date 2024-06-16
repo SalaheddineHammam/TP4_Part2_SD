@@ -1,0 +1,54 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-body">
+      <h3>Products component</h3>
+      <input class="p-1" type="text" [(ngModel)]="appState.productsState.keyword" (input)="searchProducts()">
+      <button (click)="searchProducts()" class="btn btn-outline-success ms-1">
+        <i class="bi bi-search"></i>
+      </button>
+      <table class="table">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th *ngIf="appState.authState.roles.includes('ADMIN')">Checked</th>
+          <th *ngIf="appState.authState.roles.includes('ADMIN')">Edit</th>
+          <th *ngIf="appState.authState.roles.includes('ADMIN')">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let product of appState.productsState.products,let i=index">
+          <td>{{i+1}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.price}}</td>
+          <td *ngIf="appState.authState.roles.includes('ADMIN')">
+            <button (click)="handleCheckProduct(product)" class="btn btn-outline-success">
+              <i [class]="product.checked ? 'bi bi-check' : 'bi bi-circle'"></i>
+            </button>
+          </td>
+          <td *ngIf="appState.authState.roles.includes('ADMIN')">
+            <button (click)="handleEdit(product)" class="btn btn-outline-primary">
+              <i class="bi bi-pencil"></i>
+            </button>
+          </td>
+          <td *ngIf="appState.authState.roles.includes('ADMIN')">
+            <button (click)="handleDelete(product)" class="btn btn-outline-danger">
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <ul class="nav nav-pills">
+        <li *ngFor="let page of [].constructor(this.appState.productsState.totalPages);let i=index">
+          <button (click)="handleGotoPage(i+1)"
+                  [ngClass]="appState.productsState.currentPage==(i+1)? 'btn btn-success m-1'
+                  :'btn btn-outline-success m-1'">
+            {{(i+1)}}
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

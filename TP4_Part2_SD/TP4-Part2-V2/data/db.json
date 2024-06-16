@@ -1,0 +1,79 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "password": "MTIzNA==",
+      "roles": [
+        "USER"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNTE2MjM5MDIyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAvYXV0aCIsIm5iZiI6MTUxNjIzOTAyMiwiZmlyc3ROYW1lIjoiUmFjaGlkIiwibGFzdE5hbWUiOiJFTCBLQURBSCIsImVtYWlsIjoicmFjaGlkZWxrYWRhaEBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIl19.dPhSWY8QarjElIPb6TGOfBmq4kJBaUhbcDozISMrFwE"
+    },
+    {
+      "id": "user2",
+      "password": "MTIzNA==",
+      "roles": [
+        "USER"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMiIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNTE2MjM5MDIyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAvYXV0aCIsIm5iZiI6MTUxNjIzOTAyMiwiZmlyc3ROYW1lIjoiUmFjaGlkIiwibGFzdE5hbWUiOiJFTCBLQURBSCIsImVtYWlsIjoicmFjaGlkZWxrYWRhaEBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIl19.dWPW2aeyR2OmsRzoBNOjCtGJvbylOZns71oVHQ2KijU"
+    },
+    {
+      "id": "admin",
+      "password": "MTIzNA==",
+      "roles": [
+        "USER",
+        "ADMIN"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNTE2MjM5MDIyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAvYXV0aCIsIm5iZiI6MTUxNjIzOTAyMiwiZmlyc3ROYW1lIjoiUmFjaGlkIiwibGFzdE5hbWUiOiJFTCBLQURBSCIsImVtYWlsIjoicmFjaGlkZWxrYWRhaEBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iXX0.uv1EU3H6iWlq4A4a2dQK9oj4JyanXA4p2S7lOmdN3lM"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Computer",
+      "price": "5800",
+      "checked": false
+    },
+    {
+      "id": "2",
+      "name": "Mousse",
+      "price": 3200,
+      "checked": true
+    },
+    {
+      "id": "3",
+      "name": "Smart Phone",
+      "price": "6000",
+      "checked": false
+    },
+    {
+      "id": "37e4",
+      "name": "Keyboard",
+      "price": 150,
+      "checked": true
+    },
+    {
+      "id": "5",
+      "name": "Printer",
+      "price": 3200,
+      "checked": false
+    },
+    {
+      "id": "7",
+      "name": "Computer",
+      "price": 5800,
+      "checked": true
+    },
+    {
+      "id": "9",
+      "name": "Smart Phone",
+      "price": 600,
+      "checked": true
+    },
+    {
+      "id": "9jTqcBz",
+      "name": "HeadPhone",
+      "price": "200",
+      "checked": true
+    }
+  ]
+}
